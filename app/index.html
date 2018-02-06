@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Iproduct Surveys</title>
+	<base href=".">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<link rel="shortcut icon" href="img/favicon/iphone6_S5E_icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+<header class="header">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 p0">
+				<div class="header__logo">
+					<a class="header__logo-link" href="#">
+						Job
+					</a>
+				</div>
+				<div class="header__date">
+					<span class="header__date-span" id="todayDate"></span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 p0">
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-list-item">
+							<a class="header__nav-list-link" href="javascript:void(0);">
+								Find Jobs
+							</a>
+						</li>
+						<li class="header__nav-list-item">
+							<a class="header__nav-list-link" href="javascript:void(0);">
+								Career Resources
+							</a>
+						</li>
+						<li class="header__nav-list-item">
+							<a class="header__nav-list-link" href="javascript:void(0);">
+								Post a Resume
+							</a>
+						</li>
+						<li class="header__nav-list-item">
+							<a class="header__nav-list-link" href="javascript:void(0);">
+								Company Profiles
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section class="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="main__content" id="content1">
+					<h1 class="main__content-heading">Announcement!</h1>
+					<h2 class="main__content-subheading">Full-time and part-time jobs available for [user area] residents.</h2>
+					<p class="main__content-text">Due to business expansion major companies are opening their branches in [user area].</p>
+					<p class="main__content-text">Entry, Junior and Senior positions open in Administration and Sales.</p>
+					<p class="main__content-text">Starting hourly rate from $25 for part time jobs and $50,000 for full-time jobs.</p>
+					<p class="main__content-text">No MA or BA degree necessary. All paid training provided. Benefits included.</p>
+					<p class="main__content-text">The number of remaining jobs is (15).</p>
+					<p class="main__content-text">If you agree to be considered for an interview, answer these 4 questions:</p>
+					<div class="main__content-questions" id="q1">
+						<p class="main__content-questions-text">
+							<span>Question 1 of 4:</span>
+							Do you have work experience of any kind?
+						</p>
+						<div class="button bq1">Yes</div>
+						<div class="button bq1">No</div>
+					</div>
+					<div class="main__content-questions" id="q2">
+						<p class="main__content-questions-text">
+							<span>Question 2 of 4:</span>
+							Would you agree to free training in order to get a promotion?
+						</p>
+						<div class="button bq2">Yes</div>
+						<div class="button bq2">No</div>
+					</div>
+					<div class="main__content-questions" id="q3">
+						<p class="main__content-questions-text">
+							<span>Question 3 of 4:</span>
+							Would you agree to start the new job two weeks following the interview?
+						</p>
+						<div class="button bq3">Yes</div>
+						<div class="button bq3">No</div>
+					</div>
+					<div class="main__content-questions" id="q4">
+						<p class="main__content-questions-text">
+							<span>Question 4 of 4:</span>
+							Do you have a phone number on which you can be contacted anytime from 9am to 5pm?
+						</p>
+						<div class="button bq4">Yes</div>
+						<div class="button bq4">No</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="main__content" id="content2">
+					<h1 class="main__content-heading">Checking your replies</h1>
+					<p class="main__content-loading">
+						<img src="./img/loading.gif">
+					</p>
+					<p class="main__content-text" id="result1">No duplicate registrations.</p>
+					<p class="main__content-text" id="result2">We have (3) spots remaining.</p>
+					<p class="main__content-text" id="result3">You are eligible to receive (1) iPhone X.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="main__content" id="content3">
+					<h1 class="main__content-heading">Thank you for answering the questions.</h1>
+					<h2 class="main__content-subheading">You are eligible for several part-time and full-time positions in (9) companies.</h2>
+					<p class="main__content-text">Click below to schedule an interview with a career advisor/potential employers.</p>
+					<a href="javascript:void(0)" onclick="PreventExitPop = false" class="claim" target="_blank">
+						<div class="button">GET IT NOW</div>
+					</a>
+					<p class="main__content-text">ENTER CONTACT DETAILS</p>
+					<p class="main__content-text">Please, make sure your contact details are correct and up to date to avoid delays in communication.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<div class="main-content">
+		<hr>
+		<p style="color:#a8a7a7;">
+			<span style="color:#a8a7a7;cursor:pointer;" onclick="total_likes();return false"
+				  id="liked">I like this!!</span>
+			• Comment • Share
+		</p>
+		<hr>
+		<div class="comments">
+			<p style="margin:0;padding:0;" id="total_likes">
+				<span style="color:#3b5998;">12,068</span>
+				people like this
+			</p>
+		</div>
+		<div class="comments">
+			<p style="margin:0;padding:0;float:left;display:block;width:50%;">
+				<span style="color:#3b5998;">See more comments</span>
+			</p>
+			<p style="margin:0;padding:0;float:right;display:block;width:50%;color:#a8a7a7;text-align:right;">50 out
+				of 80 312</p>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="comments" id="comment6">
+			<div class="profile">
+				<img src="./img/1.jpg">
+			</div>
+			<div class="comment-content">
+				<p class="name">Matt Dabrowski</p>
+				<p>Great site. Thank you very much.</p>
+			</div>
+			<div class="clr"></div>
+			<div class="comment-status">
+				<span>I like this!! · Reply ·
+					<img src="./img/like.png" width="15px" height="15px">34
+				</span> · A moment ago
+			</div>
+		</div>
+		<div class="comments" id="comment5">
+			<div class="profile">
+				<img src="./img/2.jpg">
+			</div>
+			<div class="comment-content">
+				<p class="name">Gustavo Geraldes</p>
+				<p>I thought at first it was a joke, but my iPhone came to see me today dhlem. # Works and nothing
+					can stop me by inviting more friends to take part again lol</p>
+			</div>
+			<div class="clr"></div>
+			<div class="comment-status">
+				<span>I like this!! · Reply ·
+					<img src="./img/like.png" width="15px" height="15px">36
+				</span> · A moment ago
+			</div>
+		</div>
+		<div class="comments" id="comment4">
+			<div class="profile">
+				<img src="./img/3.jpg">
+			</div>
+			<div class="comment-content">
+				<p class="name">Molly Jenkins</p>
+				<p>This is amazing! Never before have I won anything but today I am lucky!! Thanks Apple! I have a
+					version silver</p>
+			</div>
+			<div class="clr"></div>
+			<div class="comment-status">
+				<span>I like this!! · Reply ·
+					<img src="./img/like.png" width="15px" height="15px">5
+				</span> · A moment ago
+			</div>
+		</div>
+		<div class="comments" id="comment3">
+			<div class="profile">
+				<img src="./img/4.jpg">
+			</div>
+			<div class="comment-content">
+				<p class="name">Thomas Gordon</p>
+				<p>Thank you thank you thank you !!!!!!!! I love my iPhone!</p>
+			</div>
+			<div class="clr"></div>
+			<div class="comment-status">
+				<span>I like this!! · Reply ·
+					<img src="./img/like.png" width="15px" height="15px">32
+				</span> · A moment ago
+			</div>
+		</div>
+		<div class="comments" id="comment2">
+			<div class="profile">
+				<img src="./img/5.jpg">
+			</div>
+			<div class="comment-content">
+				<p class="name">Monika Ameen</p>
+				<p>I just got a phone call from courier to pick up my prize. I'm so happy that I participated in
+					this.</p>
+			</div>
+			<div class="clr"></div>
+			<div class="comment-status">
+				<span>I like this!! · Reply ·
+					<img src="./img/like.png" width="15px" height="15px">100
+				</span> · A moment ago
+			</div>
+		</div>
+		<div class="comments" id="comment1">
+			<div class="profile">
+				<img src="./img/6.jpg">
+			</div>
+			<div class="comment-content">
+				<p class="name">Ryan Reynolds</p>
+				<p>Two days ago, I invited 10 friends and qualified for the iPhone X. Today I got it. Thanks
+					Apple!</p>
+			</div>
+			<div class="clr"></div>
+			<div class="comment-status">
+				<span>I like this!! · Reply ·
+					<img src="./img/like.png" width="15px" height="15px">64
+				</span> · A moment ago
+			</div>
+		</div>
+		<div class="comments">
+			<div class="profile">
+				<img src="./img/7.jpg">
+			</div>
+			<div class="comment-content">
+				<p class="name">Monika Mitchell</p>
+				<p>OMG! I really got an iPhone for free! I tried to register for the second time after another
+					iPhone, but they called me because my registration was duplicated. I asked for a second T-shirt
+					and they sent me ... I now have 2 T-shirts! WINNER WINNER!</p>
+			</div>
+			<div class="clr"></div>
+			<div class="comment-status">
+				<span>I like this!! · Reply ·
+					<img src="./img/like.png" width="15px" height="15px">87
+				</span> ·
+				<span id="commentDateZero"></span>
+			</div>
+		</div>
+		<div class="comments">
+			<div class="profile">
+				<img src="./img/9.jpg">
+			</div>
+			<div class="comment-content">
+				<p class="name">Ola Smith</p>
+				<p>Two days ago, I invited 10 friends and qualified for the iPhone X. Today I got it. Thanks
+					apple!</p>
+			</div>
+			<div class="clr"></div>
+			<div class="comment-status">
+				<span>I like this!! · Reply ·
+					<img src="./img/like.png" width="15px" height="15px">54
+				</span> ·
+				<span id="commentDateOne"></span>
+			</div>
+		</div>
+		<div class="comments">
+			<div class="profile">
+				<img src="./img/8.jpg">
+			</div>
+			<div class="comment-content">
+				<p class="name">Peter Fleming</p>
+				<p>I thought at first that it was a joke, but the iPhone and the big T-shirt came to me this morning
+					by mail. I want to do more surveys! lol<br><img src="./img/2.png"></p>
+			</div>
+			<div class="clr"></div>
+			<div class="comment-status">
+				<span>I like this!! · Reply ·
+					<img src="./img/like.png" width="15px" height="15px">10
+				</span> ·
+				<span id="commentDateTwo"></span>
+			</div>
+		</div>
+		<div class="comments">
+			<div class="profile">
+				<img src="./img/10.jpg">
+			</div>
+			<div class="comment-content">
+				<p class="name">Carol Waterson</p>
+				<p>Suuuper! iPhone for free, damn it! I tried to register for the second time after another iPhone,
+					but they called me because my registration was duplicated. I asked for a second T-shirt and they
+					sent me ... I now have 2 T-shirts! WINNER WINNER!</p>
+			</div>
+			<div class="clr"></div>
+			<div class="comment-status">
+				<span>I like this!! · Reply ·
+					<img src="./img/like.png" width="15px" height="15px">45
+				</span> ·
+				<span id="commentDateThree"></span>
+			</div>
+		</div>
+		<div class="comments">
+			<div class="profile">
+				<img src="./img/11.jpg">
+			</div>
+			<div class="comment-content">
+				<p class="name">Anna Sanders</p>
+				<p>Actually, I already saw this lottery and ignored it because I thought it was a blah. I saw this
+					ad again and decided to give it a try because I was bored ... And I got an iphone and a Navy
+					T-shirt. MADNESS!<br><img src="./img/item3.png"></p>
+			</div>
+			<div class="clr"></div>
+			<div class="comment-status">
+				<span>I like this!! · Reply ·
+					<img src="./img/like.png" width="15px" height="15px">3
+				</span> -
+				<span id="commentDateFour"></span>
+			</div>
+		</div>
+	</div>
+
+
+<script src="js/scripts.min.js"></script>
+
+<!--<audio autoplay preload="">-->
+	<!--<source src="../img/alert.mp3" type="audio/mpeg">-->
+	<!--<source src="../img/alert.mp3" type="audio/mpeg">-->
+<!--</audio>-->
+
+</body>
+</html>

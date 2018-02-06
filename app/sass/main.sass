@@ -1,0 +1,228 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	line-height: 1.65
+	font-family: $mainFont
+	position: relative
+	margin: 0
+	padding: 0
+	background-color: #fff
+	overflow-x: hidden
+	opacity: 1
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.p0
+	padding: 0
+.button
+	position: relative
+	max-width: 350px
+	width: 100%
+	background: none
+	border: 2px solid #fff
+	color: #fff
+	font-size: 16px
+	font-weight: 500
+	height: 40px
+	margin: 10px auto
+	transition: all 0.2s ease-in
+	line-height: 18px
+	padding: 9px 12px
+	text-align: center
+	white-space: nowrap
+	cursor: pointer
+.button:hover,
+.button:focus
+	background: rgba(255,255,255,0.26)
+	border-color: #fff
+	outline: none
+
+#q2,
+#q3,
+#q4,
+#content2,
+#content3,
+#result1,
+#result2,
+#result3,
+#comment1,
+#comment2,
+#comment3,
+#comment4,
+#comment5,
+#comment6
+	display: none
+
+.header
+	background: #fff
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 1000
+	box-shadow: 0 0 4px rgba(0,0,0,0.2)
+	&__logo
+		display: inline-block
+		line-height: 75px
+		padding-left: 55px
+		&-link
+			display: inline-block
+			vertical-align: middle
+			width: max-content
+			color: #642891
+			font-size: 55px
+			font-weight: 700
+			text-decoration: none
+			&:hover, &:focus
+				text-decoration: none
+				color: #642891
+	&__date
+		display: inline-block
+		float: right
+		line-height: 75px
+		padding-right: 35px
+		&-span
+			display: inline-block
+			vertical-align: middle
+			font-size: 16px
+			font-family: $mainFontBold
+			color: #642891
+	&__nav
+		border: none
+		border-top: 1px solid #eee
+		width: 100%
+		&-list
+			list-style-type: none
+			margin: 0
+			&-item
+				display: inline-block
+				position: relative
+				margin-right: 50px
+				&:first-of-type
+					padding-left: 15px
+				&:last-of-type
+					margin-right: 0
+			&-link
+				display: block
+				color: #212121
+				color: rgba(0,0,0,0.87)
+				font-size: 18px
+				font-family: $mainFontBold
+				height: 50px
+				line-height: 20px
+				border-bottom: 2px solid transparent
+				margin: 0
+				padding: 13px 0
+				transition: all 0.15s ease-in
+				&:hover, &:focus
+					text-decoration: none
+					cursor: pointer
+					transition-delay: initial
+					transition-duration: 0.4s
+					transition-property: border-color
+					transition-timing-function: initial
+					transition: border-color 0s
+					border-bottom: 2px solid #642891
+					color: #642891
+					height: 50px
+.main
+	position: relative
+	padding-top: 128px
+	z-index: 1
+	height: 670px
+	background: radial-gradient(ellipse at center,#b896d8 0,#231340 100%)
+	&__content
+		max-width: 700px
+		margin: 0 auto
+		background: transparent
+		color: #fff
+		&-heading
+			text-align: center
+			font-weight: 300
+			font-size: 36px
+			margin: 50px 0 15px
+			padding: 0
+			text-transform: uppercase
+		&-subheading
+			text-align: center
+			font-weight: 300
+			font-size: 20px
+			margin: 10px 0
+			padding: 0
+		&-text
+			font-weight: 300
+			padding: 0
+			margin: 0
+		&-questions
+			font-weight: 300
+			text-align: center
+			&-text span
+				font-family: $mainFontBold
+				letter-spacing: 1px
+				font-size: 18px
+		&-loading
+			text-align: center
+
+.flag
+	background: url("../img/loading.gif") #fff no-repeat 98% 20px
+.profile
+	float: left
+	width: 60px
+	margin-right: 10px
+	cursor: pointer
+.comments 
+	background-color: #eeeff4
+	border-bottom: 2px solid #fff
+	padding: 10px
+.profile img,.comment-content img
+	width: 100%
+.comment-content 
+	float: left
+	width: 190px
+.name 
+	font-weight: bold
+	color: #3b5998
+	margin: 0
+	cursor: pointer
+.clr 
+	clear: both
+.comment-status 
+	font-size: 11px
+	cursor: pointer
+.comment-status span 
+	color: #3b5998
+.comment-like 
+	background: url("../img/like.png") no-repeat
+	display: inline-block
+	height: 16px
+	width: 16px
+@import "media" // Всегда в конце
